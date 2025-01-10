@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 import VolumeChart from "../ExchangeVolume/ExchangeVolume";
 import ExchangeTradingPairs from "../ExchangeTradingPairs/ExchangeTradingPairs";
 import FailedFetch from "../../Common/Error/FailedFetch";
-import axiosInstance from "../plugins/http";
+import axiosInstance from "../../../plugins/http";
 
 export default function ExchangeInfo() {
   const [exchangeInfo, setExchangeInfo] = useState(null);

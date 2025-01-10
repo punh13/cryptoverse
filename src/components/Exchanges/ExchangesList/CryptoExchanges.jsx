@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import axios from "axios";
-import axiosInstance from "../plugins/http";
+import axiosInstance from "@/plugins/http.js";
+// import axiosInstance from "../../../plugins/http";
 import Header from "../../Common/Header/Header";
 import styles from "./ExchangeList.module.css";
 import { useNavigate } from "react-router-dom";

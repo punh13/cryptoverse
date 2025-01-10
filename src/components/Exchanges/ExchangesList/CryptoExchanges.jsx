@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+// import axios from "axios";
+import axiosInstance from "../plugins/http";
 import Header from "../../Common/Header/Header";
 import styles from "./ExchangeList.module.css";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +17,7 @@ export default function CryptoExchanges() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios
+    axiosInstance
       .get(`/api/v3/exchanges`)
       .then((response) => {
         setExchanges(response.data);

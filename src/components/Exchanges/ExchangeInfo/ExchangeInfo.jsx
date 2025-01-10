@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import Header from "../../Common/Header/Header";
 import Loader from "../../Common/Loader/Loader";
 import "./styles.css";
@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import VolumeChart from "../ExchangeVolume/ExchangeVolume";
 import ExchangeTradingPairs from "../ExchangeTradingPairs/ExchangeTradingPairs";
 import FailedFetch from "../../Common/Error/FailedFetch";
+import axiosInstance from "../plugins/http";
 
 export default function ExchangeInfo() {
   const [exchangeInfo, setExchangeInfo] = useState(null);
@@ -18,7 +19,7 @@ export default function ExchangeInfo() {
   useEffect(() => {
     const fetchExchangeInfo = async () => {
       try {
-        const response = await axios.get(`/api/v3/exchanges/${id}`);
+        const response = await axiosInstance.get(`/api/v3/exchanges/${id}`);
         setExchangeInfo(response.data);
         setLoading(false);
       } catch (err) {
@@ -33,7 +34,7 @@ export default function ExchangeInfo() {
   useEffect(() => {
     const fetchVolumeData = async () => {
       try {
-        const response = await axios.get(
+        const response = await axiosInstance.get(
           `/api/v3/exchanges/${id}/volume_chart?days=7`
         );
 

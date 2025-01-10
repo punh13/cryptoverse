@@ -1,7 +1,9 @@
-import axios from 'axios';
+// import axios from 'axios';
+
+import axiosInstance from "../plugins/http";
 
 export const getCoinPrices = async (id, days) => {
-  const response = await axios.get(
+  const response = await axiosInstance.get(
     `/api/v3/coins/${id}/market_chart?vs_currency=usd&days=${days}&interval=daily`
   );
 

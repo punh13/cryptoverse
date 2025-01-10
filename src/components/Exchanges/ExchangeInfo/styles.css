@@ -1,0 +1,143 @@
+/* Container and Layout */
+.container {
+  width: 80%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Exchange Info Section */
+.exchange-info {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-section-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.left-section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-name-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.exchange-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.exchange-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.exchange-type {
+  font-size: 18px;
+  color: gray;
+  margin-top: 10px;
+}
+
+.trading-volume {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section p {
+  font-size: 1rem;
+  color: gray;
+}
+
+.trading-table {
+  width: 100% !important;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+a.visit-link {
+  display: inline-block;
+  background-color: var(--orange);
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+a.visit-link:hover {
+  background-color: #e6c510;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--white);
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+strong {
+  color: #333;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 90%;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    max-width: 95%;
+    width: 95%;
+  }
+
+  .left-section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header-section-flex {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .right-section {
+    width: 250px;
+    max-width: 250px;
+    margin-left: 3rem;
+  }
+
+  .container {
+    max-width: 95%;
+    width: 95%;
+  }
+}

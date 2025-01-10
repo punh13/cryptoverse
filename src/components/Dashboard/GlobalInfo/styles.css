@@ -1,0 +1,43 @@
+.global-data-container {
+  padding: 2rem 5rem;
+}
+
+.text-green {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.text-red {
+  color: var(--red);
+  font-weight: bold;
+}
+
+.market-data-flex {
+  display: flex;
+  gap: 2rem;
+  padding-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.market-data-box {
+  border: 1px solid var(--white);
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  width: 270px;
+}
+
+.market-data-box p {
+  margin: 0;
+  padding: 0.2rem;
+}
+
+.market-data-box p:last-child {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+@media only screen and (max-width: 830px) {
+  .global-data-container {
+    padding: 2rem;
+  }
+}

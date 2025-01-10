@@ -1,0 +1,159 @@
+.list-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.list-row:hover {
+  background-color: var(--darkgray);
+  transition: all 0.3s;
+}
+
+.list-row td {
+  text-align: left;
+  width: 18%;
+}
+
+.td-img {
+  width: 3rem !important;
+  margin-right: 1rem;
+}
+
+.td-center-align {
+  text-align: center;
+}
+
+.td-right-align {
+  text-align: right;
+}
+
+.total-volume-td {
+  font-size: 1rem;
+}
+
+.td-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .icon-chip {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .total-volume-td-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .td-desktop {
+    display: none;
+  }
+
+  .td-mobile {
+    display: block;
+  }
+
+  .td-center-align {
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .coin-logo-td {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .td-img {
+    width: 2rem !important;
+    margin-right: 0rem;
+  }
+
+  .name-col-td {
+    gap: 0.2rem;
+  }
+  .coin-symbol-td {
+    font-size: 0.8rem;
+  }
+
+  .coin-name-td {
+    font-size: 0.6rem;
+  }
+
+  .price-chip-td {
+    border-width: 1px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .coin-price-td {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .total-volume-td {
+    font-size: 0.6rem;
+  }
+
+  .chip-flex-td {
+    margin: 0;
+  }
+
+  .list-row {
+    margin: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .coin-logo-td {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .td-img {
+    width: 2rem !important;
+    margin-right: 0rem;
+  }
+
+  .name-col-td {
+    gap: 0.2rem;
+  }
+  .coin-symbol-td {
+    font-size: 0.6rem;
+  }
+
+  .coin-name-td {
+    font-size: 0.5rem;
+  }
+
+  .price-chip-td {
+    border-width: 1px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.6rem;
+    font-weight: 300;
+  }
+
+  .coin-price-td {
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
+
+  .chip-flex-td {
+    margin: 0;
+  }
+
+  .list-row {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}

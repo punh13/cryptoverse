@@ -1,0 +1,33 @@
+.coin-info-container {
+  background-color: var(--darkgray);
+  border-radius: 1rem;
+  width: 90%;
+  display: block;
+  margin: 1rem 3rem;
+  margin: auto;
+  padding: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.coin-info-container h2 {
+  margin-top: 0;
+}
+
+.coin-info-container p {
+  margin-bottom: 0;
+}
+
+.coin-info-container a {
+  text-decoration: underline;
+  color: var(--orange);
+}
+
+.coin-info-container a:hover {
+  cursor: pointer;
+}
+
+.read-toggle {
+  color: var(--gray);
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,12 @@
+.custom-stack {
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+}
+
+.custom-pagination .MuiPaginationItem-root {
+  color: var(--white);
+}
+
+.custom-pagination .MuiPaginationItem-root.Mui-selected {
+  background-color: var(--orange);
+}

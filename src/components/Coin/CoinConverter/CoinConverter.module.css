@@ -1,0 +1,58 @@
+.converterContainer {
+  width: 90%;
+  margin: 1.5rem auto;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.inputContainer input {
+  width: 100%;
+  padding: 1rem 3rem 1rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  background-color: var(--darkgray);
+  color: white;
+}
+
+.inputContainer:first-of-type input {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.inputContainer:last-of-type input {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.inputLabel {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: white;
+  pointer-events: none;
+}
+
+.inputField:focus {
+  border: 2px solid var(--orange);
+}
+
+.inputContainer input::-webkit-inner-spin-button,
+.inputContainer input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputContainer input {
+  -moz-appearance: textfield;
+}
